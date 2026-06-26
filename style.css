@@ -1,32 +1,88 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(32, 28, 28);
-    color: lightgrey;
-}
-header{
-    margin:10px 250px 10px 250px;
-}
-h4{
-    color: rgba(254, 254, 254, 0.34);
-}
-section{
-    width: 800px;
-    margin: 10px 360px 10px 360px;
-    text-align: justify;
-    font-size: 1.2em;
-    line-height: 30px;
-}
+@media only screen and (min-width:992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(32, 28, 28);
+        color: lightgrey;
+    }
+    header{
+        margin:10px 250px 10px 250px;
+    }
+    h4{
+        color: rgba(254, 254, 254, 0.34);
+    }
+    section{
+        width: 800px;
+        margin: 10px 360px 10px 360px;
+        text-align: justify;
+        font-size: 1.2em;
+        line-height: 30px;
+    }
 
-h3{
-    text-align: light;
+    h3{
+        text-align: light;
+    }
+    #my_email{
+        position: fixed;
+        align-self: self-end;
+    }
+    #my_number{
+        position: fixed;
+        align-self: self-start;
+    }
 }
-#my_email{
-    position: fixed;
-    align-self: self-end;
+@media only screen and (max-width:600px){
+        body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(32, 28, 28);
+        color: lightgrey;
+    }
+       header{
+        margin:10px 20px 100px 20px;
+        text-align: center;
+    }
+    h4{
+        color: rgba(254, 254, 254, 0.34);
+    }
+    #my_number{
+        margin-bottom: 50px;
+
+    }
+    section{
+        width: 325px;
+        margin: 0px, 70px, 0px, 70px;
+        text-align: justify;
+        font-size: 1.1em;
+        line-height: 25px;
+    }
 }
-#my_number{
-    position: fixed;
-    align-self: self-start;
+@media only screen and (min-width:600px){
+        body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(32, 28, 28);
+        color: lightgrey;
+    }
+       header{
+        margin:10px 20px 10px 20px;
+        text-align: center;
+    }
+    h4{
+        color: rgba(254, 254, 254, 0.34);
+    }
+    #my_number{
+        margin-bottom: 50px;
+
+    }
+    section{
+        width: 500px;
+        margin: 0px, 20px, 0px, 20px;
+        text-align: justify;
+        font-size: 1.1em;
+        line-height: 25px;
+    }
 }
