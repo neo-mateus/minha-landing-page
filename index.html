@@ -1,53 +1,221 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Landing Page de Mateus Amorim (Neomateus)">
+    <meta name="description" content="Portfólio de Mateus Amorim, estudante de Engenharia da Computação, 
+    com projetos em SQL, bancos de dados, redes de computadores e desenvolvimento web.
+    ">
     <meta name="author" content="Mateus Amorim">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Mateus Amorim</title>
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(32, 28, 28);
+        color: lightgrey;
+    }
+    #read_more{
+        color: lightgray;
+    }
+    p{
+        text-indent:25px;
+    }
+    #funny_faq{
+        text-align: center;
+    }
+    h3{
+        text-align: left;
+    }   
+/*Para celular*/
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    header{
+        width: 50vw;
+        margin:10px 20px 10px 20px;
+        text-align: center;
+    }
+    #my_email{
+        margin-top: 5%;
+    }
+    #my_number{
+        line-height: 4.5vh;
+        margin-bottom: 50px;
+
+    }
+    section{
+        width: 90vw;
+        margin: 0px 4% 3vh 4%;
+        text-align: justify;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    main{
+        width: 90vw;
+        margin: 0px 3% 3vh 3%;
+        text-align: justify;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+}
+/*Tablets*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+    header{
+        width: 100vw;
+        height: 25vh;
+        margin:10px 20px 10px 20px;
+        text-align: center;
+    }
+    h1{
+        margin-top: 10vh;
+    }
+    #my_email{
+        margin-top: 5%;
+    }
+    #my_number{
+        line-height: 4.5vh;
+        margin-bottom: 50px;
+
+    }
+    section{
+        width: 90vw;
+        margin: 0px 5% 5vh 5%;
+        text-align: justify;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    main{
+        width: 90vw;
+        margin: 0px 5% 5vh 5%;
+        text-align: justify;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+}
+
+/*Notebooks*/
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    header{
+        margin:10px 250px 10px 250px;
+    }
+    section {
+        width: 80vw;
+        margin: 5% 30% 5vh 30%;
+        text-align: justify;
+        font-size: 1.2em;
+        line-height: 2rem;
+    }
+    main {
+        width: 80vw;
+        margin: 5% 30% 5vh 30%;
+        text-align: justify;
+        font-size: 1.2em;
+        line-height: 2rem;
+    }
+    #funny_faq{
+        color: rgb(137, 136, 136);
+        font-size: 1.7rem;
+    }
+    #my_email{
+        color: lightgray;
+        position: fixed;
+        align-self: self-end;
+    }
+    #my_number{
+        position: fixed;
+        align-self: self-start;
+    }
+
+}
+/*Desktops*/
+@media only screen and (min-width:1025px) {
+
+    header{
+        margin:10px 250px 10px 250px;
+    }
+    section {
+        width: 50vw;
+        margin: 5% 30% 5vh 30%;
+        text-align: justify;
+        font-size: 1.2em;
+        line-height: 2rem;
+    }
+    main {
+        width: 50vw;
+        margin: 5% 30% 7vh 30%;
+        text-align: justify;
+        font-size: 1.2em;
+        line-height: 2rem;
+    }
+    #funny_faq{
+        color: rgb(137, 136, 136);
+        font-size: 1.7rem;
+    }
+    #my_email{
+        color: lightgray;
+        position: fixed;
+        align-self: self-end;
+    }
+    #my_number{
+        position: fixed;
+        align-self: self-start;
+    }
+    #read_more{
+        color: lightgray;
+    }
+}
+    </style>
 </head>
 <body>
-    <header><!--Meu nome-->
+    <!--Meu nome-->
+    <header>
         <h1>Mateus Amorim, este sou eu!</h1>
-        <center><h4><i>Mas afinal, quem é Mateus Amorim?</i></h4></center> 
+        <h2 id="funny_faq"><i>Mas afinal, quem é Mateus Amorim?</i></h4>
     </header>
-    <aside id="my_email"><!--Meu E-mail-->
-        E-mail: neomateus33@gmail.com
-    </aside>
-    <aside id="my_number"><!--Meu número de telefone-->
+    <!--Meu E-mail-->
+    <address id="my_email">
+        <a href="mailto:neomateus33@gmail.com" style="color: lightgray;">E-mail: neomateus33@gmail.com</a>
+    </address>
+    <!--Meu número de telefone-->
+    <address id="my_number">
         Whatsapp: +55 (12) 99738-5687<br>
         Telefone fixo: (12) 3101-1761
-    </aside>
-    <section><!--Resumo-->
-        <p style="text-indent:25px;">
-                Meu nome é Mateus Amorim, estou bacharelando-me em engenharia de computação pela universidade salesiana (UNISAL) de Lorena, 
-            assim como muitos, possuo afinidade e paixão pela tecnologia, mas também, pela matemática, ciência e estudos gerais.
-            Desde os meus nove anos de idade venho acompanhando com pouco da tecnologia do computador do meu quarto e a tendência foi que este
-            hábito aumentasse cada vez mais a medida que crescia, amadurecia minhas ideias de profissão, hoje busco sempre desenvolver meus projetos
-            com alto rigor bibliográfico e sempre buscando desenvolver o meu sistema de forma totalmente coerente e normativo aos padrões pré-estabelecidos.
+    </address>
+    <!--Resumo-->
+    <main>
+        <p>
+            Meu nome é Mateus Amorim e estou cursando o bacharelado em Engenharia da Computação pela Universidade Salesiana (UNISAL), em Lorena. 
+            Assim como muitos, tenho afinidade e paixão por tecnologia, mas também por matemática, ciência e estudos em geral. Desde os nove anos de 
+            idade acompanho o universo da tecnologia por meio do computador do meu quarto, e essa curiosidade só aumentou à medida que cresci e 
+            amadureci minhas ideias sobre a profissão que desejava seguir. Hoje, busco desenvolver meus projetos com alto rigor bibliográfico, 
+            procurando construir sistemas de forma coerente e em conformidade com os padrões e normas estabelecidos.             
         </p>
-        <p style="text-indent:25px;">
-                Atualmente estou buscando me especializar em sistemas de gerenciamento de banco de dados(SGBD), estudando diferentes modelos de dados
-            práticas de projeto de banco de dados e buscando compreender ao máximo os mecanismos dos SGBDs para poder trabalhar da melhor forma toda a
-            anatomia do sistema, meus planos são me especializar em sistemas de armazenamento distribuídos, redes de computadores e inteligência artificial.
+        <p>
+          Atualmente, estou me especializando em Sistemas de Gerenciamento de Banco de Dados (SGBDs), estudando diferentes modelos de dados, práticas de
+          projeto de bancos de dados e buscando compreender, ao máximo, os mecanismos internos dos SGBDs para trabalhar de forma eficiente com toda a 
+          arquitetura desses sistemas. Meus planos são me especializar em sistemas de armazenamento distribuído, redes de computadores e inteligência 
+          artificial.      
         </p>
-    </section><!--Fim da seção-->
+    </main><!--Fim do resumo-->
     <br>
     <hr width="100%">
-    <section><!--Minhas experiências-->
+    <!--Minhas experiências-->
+    <section>
         <h2>Minhas experiências</h2>
         <br>
         <h3>Estagiário de TI - UNISAL | 04/2026 - 12/2026</h3>
-        <p style="text-indent:25px;">
+        <p>
             Realizei a configuração, gestão e supervisão de diversos computadores, realizando por meio da manutenção preventiva,
             mapeamento e automação de processos via recursos PowerShell para garantir que laboratórios estejam sempre de prontidão
             para outros usuários da universidade. 
         </p>
         <br>
         <h3>Estagiário de TI - CECAL | 07/2025 - 12/2025</h3>
-        <p style="text-indent: 25px;">
+        <p>
             Aqui tive meu primeiro contato com redes corporativas, lidei com gestão de diversos computadores, realizando a configuração, manutenção
             de computadores em um ambiente totalmente dinâmico tanto em escritórios quando em ambiente de produção. Gerindo o tempo e lidando com
             atendimento de solicitações via plataforma Jira, também construí sinteticamente, ao lado da equipe, a planta baixa da rede de computadores
@@ -56,7 +224,7 @@
         </p>
         <br>
         <h3>Estagiário de desenvolvedor Web - Pynex | 05/2024 - 07/2024</h3>
-        <p style="text-indent: 25px;">
+        <p>
             Desenvolvi projetos Web dentro da empresa ao lado do meu colaborador, agindo no back-end criando novos recursos
             otimizando projetos existentes e entregando resultados a prazo para clientes utilizando as linguagens de marcação
             HTML5, CSS3, as linguagens de programação javascript e PHP.
@@ -64,19 +232,21 @@
     </section><!--Fim da seção-->
     <br>
     <hr width="100%">
-    <section><!--Meus projetos-->
+    <!--Meus projetos-->
+    <section>
         <h2>Meus Projetos</h2>
         <br>
-        <article><!--Artigo-->
+        <!--Artigo-->
+        <article>
             <h3 style="color: lightgray;">Meus exercícios SQL</h3>
-            <p style="text-indent: 25px;">
+            <p>
                 Aqui é onde eu publico meus exercícios de práticas de SQL
                 criando esquemas de bancos de dados e simulando consultas reais.
                  Sempre busco resolver questões que acho interessantes no codeforces,
                  beecrowd, livros, ou qualquer outra plataforma que tenha questões
                  interessantes.
             </p>
-            <h4><a id="read_more"  href="https://github.com/neo-mateus/exercicios-sql" target="_blank">Saiba mais...</a></h4>
+            <h4><a id="read_more"  href="https://github.com/neo-mateus/exercicios-sql" target="_blank" rel="noopeer noreferrer">Saiba mais...</a></h4>
         </article><!--Fim do artigo-->
     </section><!--Fim da seção-->
     <hr width="100%">
